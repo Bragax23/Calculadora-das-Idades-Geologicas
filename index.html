@@ -1,90 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Solar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-image: url('imagem/d2d.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #fff;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        .planet-info {
-            margin-top: 20px;
-            color: #fff;
-        }
-        .planet-info ul {
-            list-style: none;
-            padding: 0;
-        }
-        .planet-info ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .planet-info ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .planet-info ul li a:hover {
-            text-decoration: underline;
-        }
-        #sol-info, #terra-info, #marte-info {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: left;
-        }
-    </style>
+    <title>Calculadora de Eras Geológicas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sistema Solar</h1>
-    <img src="imagem/2-sistema-solar.webp" alt="Sistema Solar">
+    <main>
+        <div class="container">
+            <div class="title">Calculadora - Idades Geológicas</div>
+            <div class="input">
+                <label>Nome do Evento:</label>
+                <input type="text" id="evento">
+            </div>
+            <div class="input">
+                <label>Tempo (em milhões de anos):</label>
+                <input type="number" id="tempo">
+            </div>
+            <button id="calcular">Calcular</button>
 
-    <div class="planet-info">
-        <p>Selecione um planeta para obter mais informações:</p>
-        <ul>
-            <li><a href="https://pt.wikipedia.org/wiki/Sol">Sol</a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/Terra">Terra</a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/Marte_(planeta)">Marte</a></li>
-        </ul>
-    </div>
-
-    <div id="sol-info">
-        <h2>Informações sobre o Sol</h2>
-        <p>O Sol é a estrela central do nosso sistema solar. É uma esfera de plasma composta principalmente de hidrogênio e hélio.</p>
-        <p><a href="#top">Voltar ao topo</a></p>
-    </div>
-
-    <div id="terra-info">
-        <h2>Informações sobre a Terra</h2>
-        <p>A Terra é o terceiro planeta do sistema solar e o único conhecido por abrigar vida. Ela tem uma atmosfera que suporta a vida e é o único corpo celeste onde a água pode existir em estado líquido na superfície.</p>
-        <p><a href="#top">Voltar ao topo</a></p>
-    </div>
-
-    <div id="marte-info">
-        <h2>Informações sobre Marte</h2>
-        <p>Marte é o quarto planeta do sistema solar, conhecido como o "planeta vermelho" devido à sua coloração. É um planeta rochoso com uma fina atmosfera de dióxido de carbono.</p>
-        <p><a href="https://pt.wikipedia.org/wiki/Marte_(planeta)">Voltar ao topo</a></p>
-    </div>
-
-    <p id="top"><a href="#">Voltar ao topo da página</a></p>
+            <div class="result" id="resultado"></div>
+        </div>
+    </main>
+    <script src="java.js"></script>
 </body>
 </html>
-
-
