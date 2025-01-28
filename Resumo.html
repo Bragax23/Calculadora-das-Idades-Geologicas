@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geológica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+            background: url() no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .header, .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        .header {
+            font-size: 1.5em;
+        }
+        .header .logo {
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .header nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .main-content {
+            text-align: center;
+        }
+        .title {
+            font-size: 3em;
+            margin: 10px 0;
+        }
+        .subtitle {
+            font-size: 1.8em;
+            color: yellow;
+        }
+        .description {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2em;
+            background: rgb(134, 3, 3);
+            color: black;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .image {
+            margin: 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5em;
+            }
+            .subtitle {
+                font-size: 1.5em;
+            }
+            .description {
+                font-size: 1em;
+            }
+            .header, .footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header nav {
+                margin-top: 10px;
+            }
+            .header nav a {
+                display: inline-block;
+                margin: 5px 0;
+            }
+            .buttons a {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1.2em;
+            }
+            .description {
+                font-size: 0.9em;
+            }
+            .buttons a {
+                font-size: 0.9em;
+                padding: 7px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        
+           
+        </div>
+
+        <div class="main-content">
+            <h1 class="title">Ultimo projeto de Web: Calculadora</h1>
+            <p class="description">
+                O código determina em qual era geológica um evento ocorreu com base no tempo informado pelo usuário, em milhões de anos atrás. Ele compara esse tempo com as faixas específicas de cada era geológica:
+
+                Período Quaternário da Era Cenozóica (até 2,58 milhões de anos atrás)
+                Era Cenozoica (de 2,58 a 66 milhões de anos atrás)
+                Era Mesozoica (de 66 a 252,17 milhões de anos atrás)
+                Era Paleozoica (de 252,17 a 541 milhões de anos atrás)
+                Pré-Cambriano (de 541 milhões a 2500 milhões de anos atrás)
+                Época anterior ao Pré-Cambriano (mais de 2500 milhões de anos atrás)
+                O código então exibe uma mensagem com a era correspondente ao evento, ou avisa para preencher todos os campos, caso algum dado esteja faltando.
+</p>
+            <div class="buttons">
+                <a href="Index.html">Ir para Calculadora</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
