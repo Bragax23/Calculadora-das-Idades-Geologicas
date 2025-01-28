@@ -4,7 +4,7 @@ main {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5; /* Fundo neutro */
+    background-color:#f5f5f5; 
 }
 
 .container {
