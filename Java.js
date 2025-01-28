@@ -7,13 +7,16 @@ function calcularEra() {
 
     if (evento !== '' && tempo !== '') {
         let era = '';
+        
         if (tempo <= 2.58) {
             era = 'no Período Quaternário da Era Cenozóica.';
         } else if (tempo <= 66) {
-            era = 'na Era Mesozóica.';
+            era = 'na Era Cenozoica.';
         } else if (tempo <= 252.17) {
-            era = 'na Era Paleozóica.';
+            era = 'na Era Mesozóica.';
         } else if (tempo <= 541) {
+            era = 'na Era Paleozóica.';
+        } else if (tempo <= 2500) {
             era = 'no Pré-Cambriano.';
         } else {
             era = 'em uma época muito anterior ao Pré-Cambriano.';
