@@ -27,5 +27,5 @@ function calcularEra() {
         resultado.textContent = 'Preencha todos os campos!!!';
     }
 }
-/**/
+
 calcular.addEventListener('click', calcularEra);
