@@ -10,12 +10,12 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    background: #fff; /* Fundo branco para simplicidade */
-    width: 320px; /* Tamanho mais compacto */
+    background: #fff; 
+    width: 320px; 
     height: auto;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10px; /* Bordas levemente arredondadas */
+    border-radius: 10px; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
     padding: 20px;
     box-sizing: border-box;
